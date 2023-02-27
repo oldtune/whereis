@@ -1,0 +1,19 @@
+[package]
+name = "whereis"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "whereis"
+path = "src/main.rs"
+
+[lib]
+name = "whereis_lib"
+path = "src/lib.rs"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4"
+serde = { version = "1.0.152", features = ["derive"] }
+serde_json = "1.0.93"
+tokio = { version = "1.25.0", features = ["full"] }
